@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url('bkgd.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.heading {
+    margin: 15px 0px;
+}
+
+.inp-container {
+    border: 2px solid rgb(178, 175, 175);
+    background-color: rgb(232, 237, 243);
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    position:relative;
+}
+@media all and (max-width:450px) {
+    .inp-container{
+        width: 80%;
+    }
+}
+
+.inp-cityName {
+    background-color: rgb(232, 237, 243);
+    width: 88%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+@media all and (max-width:450px) {
+    .inp-cityName{
+        font-size: 18px;
+    }
+}
+.search-btn{
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+    mix-blend-mode: multiply;
+    &:hover{
+        cursor: pointer;
+    }
+}
+@media all and (max-width:450px) {
+    .search-btn{
+        font-size: 20px;
+    }
+}
+.city-container{
+    /* border: 2px solid red; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:300px;
+    height: 150px;
+    margin:20px 0px;
+    background:url('flag.jpeg') no-repeat;
+    background-size: cover;
+    &:hover .cityName1{
+        transform: scale(1.2);
+        transition: all 1s linear;
+    }
+}
+.cityName{
+    font-size: 25px;
+    padding: 10px 0px;
+}
+@media all and (max-width:450px) {
+    .city-container{
+        width: 210px;
+        height: 100px;
+    }
+}
+
+.weather-details{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap:wrap;
+   position:relative;
+}
+.temp-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+    font-weight:bold;
+    font-size:20px;
+    color:black;
+    width: 200px;
+    height: 140px;
+    /* border: 2px solid red; */
+    background: url(temprature.jpeg) no-repeat;
+    background-size: cover;
+    cursor:pointer;
+    &:hover .temp{
+        transform: scale(1.2);
+        transition: .5s linear;
+    }
+}
+
+.wind-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+    font-weight:bold;
+    font-size:20px;
+    color:black;
+    width: 200px;
+    height: 140px;
+    /* border: 2px solid red; */
+    background: url(wind.jpeg) no-repeat;
+    background-size: cover;
+    cursor:pointer;
+    &:hover .wind{
+        transform: scale(1.2);
+        transition: .5s linear;
+    }
+}
+.humidity-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+    font-weight:bold;
+    font-size:20px;
+    color:black;
+    width: 200px;
+    height: 140px;
+    /* border: 2px solid red; */
+    background: url(humidity.jpeg) no-repeat;
+    background-size: cover;
+    cursor:pointer;
+    &:hover .humidity{
+        transform: scale(1.2);
+        transition: .5s linear;
+    }
+}
+.min-temp-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+    font-weight:bold;
+    font-size:20px;
+    color:black;
+    width: 200px;
+    height: 140px;
+    /* border: 2px solid red; */
+    background: url(min-temp.jpeg) no-repeat;
+    background-size: cover;
+    cursor:pointer;
+    &:hover .min-temp{
+        transform: scale(1.2);
+        transition: .5s linear;
+    }
+}
+.max-temp-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+    font-weight:bold;
+    font-size:20px;
+    color:black;
+    width: 200px;
+    height: 140px;
+    /* border: 2px solid red; */
+    background: url(max-temp.jpeg) no-repeat;
+    background-size: cover;
+    cursor:pointer;
+    &:hover .max-temp{
+        transform: scale(1.2);
+        transition: .5s linear;
+    }
+}

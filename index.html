@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0f885f77ea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Weather App</h1>
+
+        <div class="inp-container">
+            <input type="text" class="inp-cityName" name="city" id="city_name" placeholder="Enter City Name">
+            <button class="search-btn" id="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        
+        <div class="city-container">
+            <h3 class="cityName">City Name: </h3>
+            <h1 id="name" class="cityName1"></h1>
+        </div>
+
+    <div class="weather-details">
+        <div class="temp-container">
+            <h3 class="temp">Temperature: </h3>
+            <p id="temp" class="temp">0 &deg;C</p>
+        </div>
+
+        <div class="wind-container">
+            <h3 class="wind">Wind: </h3>
+            <p id="wind" class="wind">0 m/s</p>
+        </div>
+
+        <div class="humidity-container">
+            <h3 class="humidity">Humidity: </h3>
+            <p id="humidity" class="humidity">0 %</p>
+        </div>
+
+        <div class="min-temp-container">
+            <h3 class="min-temp">MinTemp: </h3>
+            <p id="minTemp" class="min-temp">0 &deg;C</p>
+        </div>
+
+        <div class="max-temp-container">
+            <h3 class="max-temp">MaxTemp: </h3>
+            <p id="maxTemp" class="max-temp">0 &deg;C</p>
+    </div>
+
+    </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
