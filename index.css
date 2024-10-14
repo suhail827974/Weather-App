@@ -56,6 +56,10 @@
         cursor: pointer;
     }
 }
+@media all and (max-width:600px) {
+    .container {
+        height: auto;
+}
 @media all and (max-width:450px) {
     .search-btn{
         font-size: 20px;
